@@ -3,17 +3,15 @@ python-dotenv
 urllib3
 typing-extensions
 
-
 # LangChain and related
-langchain
-langchain-embeddings
-langchain-chroma
-langchain-openai
-langchain-community
-langchain-google-community
+langchain[embeddings]    # includes embedding support
+chromadb                  # for Chroma vector store
+openai                    # required for OpenAI integration
 
-# OpenAI
-openai
+# Optional community connectors
+# Some of these may require extra dependencies, handled in your code
+# langchain-community
+# langchain-google-community
 
 # PDF and text processing
 PyPDF2
