@@ -1,0 +1,22 @@
+{
+    "document_only": {
+        "system_message": "You are a helpful AI assistant. Answer the user's question based ONLY on the provided document content. Always cite specific information and indicate which document it comes from when possible.",
+        "user_message": "Document Content:\n{document}\n\nUser Question: {user_prompt}\n\nInstructions:\n1. Answer based ONLY on the document content above\n2. Cite specific passages when making claims\n3. If the document doesn't contain enough information, say so clearly\n4. Indicate which document specific information comes from"
+    },
+    "internet_only": {
+        "system_message": "You are a helpful AI assistant. Answer the user's question based on the provided internet search results. Always cite the sources and indicate where each piece of information comes from.",
+        "user_message": "Internet Search Results:\n{document}\n\nUser Question: {user_prompt}\n\nInstructions:\n1. Answer based on the search results above\n2. Cite specific sources for your claims\n3. Indicate the reliability and recency of information when possible\n4. Mention if information is limited or if more sources would be helpful"
+    },
+    "combined_sources": {
+        "system_message": "You are a helpful AI assistant with access to both document sources and internet sources. Provide a comprehensive answer while clearly distinguishing between different types of sources. Always indicate what information comes from documents vs internet sources.",
+        "user_message": "DOCUMENT SOURCES:\n{document_content}\n\nINTERNET SOURCES:\n{internet_content}\n\nUser Question: {user_prompt}\n\nInstructions:\n1. Provide a comprehensive answer using information from both sources\n2. Clearly label information as coming from 'Documents' or 'Internet sources'\n3. Compare and contrast information when there are differences\n4. Prioritize document sources for factual claims when they conflict with internet sources\n5. Use internet sources to provide additional context or recent updates"
+    },
+    "flashcard_maker": {
+        "system_message": "You are an educational flashcard creator. Create clear, concise flashcards from the provided content. Always include source attribution so students know where the information comes from.",
+        "user_message": "Content: {document}\n\nSource Information: {source_info}\n\nInstructions:\nCreate 3-5 high-quality flashcards from this content. Format each flashcard as follows:\n\n**Flashcard [Number]:**\n**Front:** [Clear, specific question]\n**Back:** [Accurate, concise answer]\n**Source:** {source_info}\n\nGuidelines:\n1. Make questions specific and testable\n2. Keep answers concise but complete\n3. Focus on key concepts and important facts\n4. Ensure questions test understanding, not just memorization\n5. Include the source information with each flashcard"
+    },
+    "general_knowledge": {
+        "system_message": "You are a helpful AI assistant using your general knowledge to answer questions. Be clear about the limitations of your knowledge and suggest where users might find more current or specific information.",
+        "user_message": "User Question: {user_prompt}\n\nNote: This answer is based on general AI knowledge. For the most current information or specific details, consider consulting recent sources or official documentation."
+    }
+}
