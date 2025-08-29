@@ -1,0 +1,26 @@
+# Environment & Utilities
+python-dotenv
+urllib3
+typing-extensions
+warnings
+
+# LangChain and related
+langchain
+langchain-embeddings
+langchain-chroma
+langchain-openai
+langchain-community
+langchain-google-community
+
+# OpenAI
+openai
+
+# PDF and text processing
+PyPDF2
+regex
+
+# Streamlit
+streamlit
+
+# Optional dependencies
+tqdm
