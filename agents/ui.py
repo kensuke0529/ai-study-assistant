@@ -7,11 +7,7 @@ import json
 import uuid
 from datetime import datetime
 
-# Add the agents directory to the path
-current_dir = Path(__file__).parent
-sys.path.append(str(current_dir / "agents"))
-
-# Import the RAG components directly
+# Import the RAG components directly from the same directory
 from rag import (
     SourceType, 
     SourcePreference, 
