@@ -2,7 +2,7 @@
 python-dotenv
 urllib3
 typing-extensions
-warnings
+
 
 # LangChain and related
 langchain
